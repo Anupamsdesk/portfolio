@@ -284,18 +284,18 @@ module.exports = function (grunt) {
             'scripts/directives/{,*/}*.html',
             'fonts/*'
           ]
-        }, 
+        },
         {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.distPublic %>/images',
           src: ['generated/*']
-        }, 
-        { 
-        expand: true,
-        cwd: '<%= yeoman.app %>/bower_components/bootstrap/dist/fonts',
-        dest: '<%= yeoman.dist %>/fonts',
-        src: '*.*'
+        },
+        {
+          expand: true,
+          cwd: '<%= yeoman.app %>/bower_components/bootstrap/dist/fonts',
+          dest: '<%= yeoman.dist %>/fonts',
+          src: '*.*'
         }]
       },
       styles: {
